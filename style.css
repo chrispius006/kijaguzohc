@@ -1,0 +1,284 @@
+
+body {
+    background-color:azure;
+    color: black; 
+    padding: 0;
+    margin: 0;
+    font-family: serif;
+}
+nav{
+    height: 190px;
+    background-color: white;
+   /* position: fixed;*/
+    width: 100%;
+    
+    
+}
+.dropdown{
+    margin: 0 auto;
+}
+.logo{
+    float: left;
+    padding: 5px 0 0 0;
+    width: 150px;
+    height: auto;
+}
+
+nav ul{
+    padding: 0;
+    margin: 0;
+    float: right;
+    padding-top: 80px;
+}
+nav ul li{
+    list-style: none;
+    padding: 10px;
+    font-size: 30px;
+    position: relative;
+    display: inline-block;
+    top: -20px;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    padding: 10px;
+    color: blue;
+    line-height: 60%;
+    display: block;
+    position: relative;
+   
+}
+nav ul li a:hover{
+    color: red;
+    padding: 10px;
+    
+}
+
+nav ul ul{
+    display: none;
+    position: absolute;
+     top: 0px;
+    
+}
+nav ul li:hover > ul{
+    display:block;
+   
+}
+nav ul ul li{
+    width: 300px;
+    float: none;
+    background: lightblue;
+    display:block;
+    border-bottom-style: solid;
+    border-radius: 40px;
+}
+nav ul ul ul li{
+    position: relative;
+    right: 330px;
+    top: -70px;
+    
+}
+.body {
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+    
+      
+}
+.body ol li {
+    padding: 5px; 
+}
+.body ol li li{
+     list-style-type: square;
+}
+.body ul li {
+    padding: 5px; 
+}
+.body img{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    transition: 0.3s;
+    display: block;
+}
+footer{
+    border: 2px;
+    border-color: brown;
+}
+
+footer ul{
+    background-color: chocolate;
+    font-size: 30px;
+    height: 120px;
+    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
+   
+}
+footer ul li:hover a{
+    color: red;
+
+}
+footer li{
+    list-style: none;
+    display: inline-block;
+    padding: 50px;
+    padding-top: 30px;
+     
+    
+    
+    
+}
+footer ul li a{
+    text-decoration: none;
+   color: white;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 20px;
+}
+.consult{
+    float: right;
+    height: 500px;
+    width: 700px;
+    padding-right: 60px
+        
+}
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type=submit]:hover{
+    background-color: #45a049;
+}
+section{
+    padding-top: 50px;
+    padding-left: 320px;
+    
+}
+.contact{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 90%;
+    max-width: 700px;
+    box-shadow: 0px 0px 20px #00000010;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    
+}
+#status{
+    max-width: 725px;
+    border-radius: 8px;
+    width: 90%;
+}
+@keyframes status{
+    0%{
+      opacity: 1;
+        pointer-events:all;
+    }
+     90%{
+      opacity: 1;
+        pointer-events: all;
+    }
+     100%{
+      opacity: 0;
+        pointer-events: none;
+    }
+}
+#status.success{
+    background-color: greenyellow;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+    animation: status 4s ease fowards;
+    animation-duration: 4s;
+    animation-name: status;
+}
+#status.error{
+    background-color: orange;
+    text-align: center;
+    padding: 8px;
+    font-size: 20px;
+    color: white;
+    animation: status 4s ease fowards;
+}
+
+
+.co{
+    background-color: lightcoral;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+        
+}
+.info{
+    padding: 50px;
+    text-align: center;
+}
+.med{
+    padding: 0;
+    padding-right: 0;
+    width: 100%;
+    
+}
+.location{
+    background-color: darkslategray;
+    text-align: center;
+    font-size: 30px;
+    height: 200px;
+    color: white;
+    padding-top: 80px;
+}
+
+@keyframes layout{
+    0%{background-color: aqua;}
+    25%{background-color: yellow;}
+    50%{background-color: dodgerblue;}
+    75%{background-color: red;}
+    100%{background-color: lawngreen;
+    }
+}
+.layout{
+    background-color: aqua;
+    border-style: solid;
+    border-color: brown;
+    padding: 10px;
+    width: 700px;
+    border-radius: 10px;
+    margin: 0px;
+    animation-name: layout;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+}
+
+.welc{
+    border-radius: 20px;
+    background-color: darksalmon;
+    width: 600px;
+    height: 80px;
+    padding:10px;
+    border-style: solid;
+    transition: width 2s, height 4s, transform 2s;
+}
+.welc:hover {
+    width:700px;
+    height: 100px;
+    background-color: dodgerblue;
+}
+
+
