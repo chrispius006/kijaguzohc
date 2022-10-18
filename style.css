@@ -94,54 +94,18 @@ nav ul ul ul li{
 .body ul li {
     padding: 5px; 
 }
-.body img{
-    width: 100%;
+.stuff img{
+    max-width: 100%;
     margin: 0;
     padding: 0;
-    transition: 0.3s;
-    display: block;
-}
-footer{
-    border: 2px;
-    border-color: brown;
 }
 
-footer ul{
-    background-color: chocolate;
-    font-size: 30px;
-    height: 120px;
-    margin-bottom: 0;
-    padding: 0;
-    margin: 0;
-   
-}
-footer ul li:hover a{
-    color: red;
-
-}
-footer li{
-    list-style: none;
-    display: inline-block;
-    padding: 50px;
-    padding-top: 30px;
-     
-    
-    
-    
-}
-footer ul li a{
-    text-decoration: none;
-   color: white;
-    border-style: solid;
-    padding: 5px;
-    border-radius: 20px;
-}
-.consult{
+.consult img{
     float: right;
     height: 500px;
     width: 700px;
-    padding-right: 60px
-        
+    padding-right: 60px; 
+    
 }
 input[type=text], select, textarea{
     width: 100%;
@@ -180,45 +144,6 @@ section{
     margin-bottom: 20px;
     
 }
-#status{
-    max-width: 725px;
-    border-radius: 8px;
-    width: 90%;
-}
-@keyframes status{
-    0%{
-      opacity: 1;
-        pointer-events:all;
-    }
-     90%{
-      opacity: 1;
-        pointer-events: all;
-    }
-     100%{
-      opacity: 0;
-        pointer-events: none;
-    }
-}
-#status.success{
-    background-color: greenyellow;
-    text-align: center;
-    padding: 8px;
-    font-size: 20px;
-    color: white;
-    animation: status 4s ease fowards;
-    animation-duration: 4s;
-    animation-name: status;
-}
-#status.error{
-    background-color: orange;
-    text-align: center;
-    padding: 8px;
-    font-size: 20px;
-    color: white;
-    animation: status 4s ease fowards;
-}
-
-
 .co{
     background-color: lightcoral;
     padding: 20px;
@@ -230,7 +155,7 @@ section{
     padding: 50px;
     text-align: center;
 }
-.med{
+.med img{
     padding: 0;
     padding-right: 0;
     width: 100%;
@@ -279,6 +204,37 @@ section{
     width:700px;
     height: 100px;
     background-color: dodgerblue;
+}
+footer{
+    border: 2px;
+    border-color: brown;
+}
+
+footer ul{
+    background-color: chocolate;
+    font-size: 30px;
+    height: 120px;
+    margin-bottom: 0;
+    padding: 0;
+    margin: 0;
+   
+}
+footer ul li:hover a{
+    color: red;
+
+}
+footer li{
+    list-style: none;
+    display: inline-block;
+    padding: 50px;
+    padding-top: 30px;   
+}
+footer ul li a{
+    text-decoration: none;
+   color: white;
+    border-style: solid;
+    padding: 5px;
+    border-radius: 20px;
 }
 
 
