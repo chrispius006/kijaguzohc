@@ -136,8 +136,6 @@ section{
     padding-top: 50px;
     padding-left: 320px;
     align-content: center;
-    
-    
 }
 .contact{
     border-radius: 5px;
@@ -148,6 +146,7 @@ section{
     box-shadow: 0px 0px 20px #00000010;
     border-radius: 8px;
     margin-bottom: 20px;
+    
     
     
 }
@@ -265,7 +264,7 @@ footer ul li i{
     display: none;
 }
 
-@media (max-width: 600px){
+@media (max-width: 720px){
     .checkbtn{
       display: block;
     }
@@ -314,6 +313,7 @@ footer ul li i{
       .consult{
           width: 700px;
           padding-bottom: 20px;
+          display: none;
           
       }
       .dropdown ul ul li{
@@ -328,6 +328,10 @@ footer ul li i{
     .phone{
         display:inline;
     } 
+    .logo{
+        width: 9px;
+        height: 5px;
+    }
 }
 
 
