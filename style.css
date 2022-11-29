@@ -5,6 +5,7 @@ body {
     padding: 0;
     margin: 0;
     font-family: serif;
+    font-size: 18px;
 }
 nav{
     height: 190px;
@@ -65,25 +66,28 @@ nav ul li:hover > ul{
    
 }
 nav ul ul li{
-    width: 300px;
+    width: 250px;
     float: none;
     background: lightblue;
     display:block;
     border-bottom-style: solid;
     border-radius: 40px;
+    margin: 5px;
 }
+
 nav ul ul ul li{
     position: relative;
     right: 330px;
     top: -70px;
     
 }
+nav .active{
+    color: black;
+}
 .body {
     margin: 0;
     padding: 20px;
-    font-size: 16px;
-    
-      
+    font-size: 16px;    
 }
 .body ol li {
     padding: 5px; 
@@ -131,6 +135,8 @@ input[type=submit]:hover{
 section{
     padding-top: 50px;
     padding-left: 320px;
+    align-content: center;
+    
     
 }
 .contact{
@@ -142,6 +148,7 @@ section{
     box-shadow: 0px 0px 20px #00000010;
     border-radius: 8px;
     margin-bottom: 20px;
+    
     
 }
 .co{
@@ -194,47 +201,133 @@ section{
 .welc{
     border-radius: 20px;
     background-color: darksalmon;
-    width: 600px;
+    width: 45%;
     height: 80px;
     padding:10px;
     border-style: solid;
     transition: width 2s, height 4s, transform 2s;
 }
 .welc:hover {
-    width:700px;
+    width:50%;
     height: 100px;
     background-color: dodgerblue;
 }
-footer{
-    border: 2px;
-    border-color: brown;
-}
 
 footer ul{
-    background-color: chocolate;
+    background-color: #2e354f;
     font-size: 30px;
-    height: 120px;
+    height: 100px;
     margin-bottom: 0;
     padding: 0;
     margin: 0;
+    width: 100%;
    
 }
 footer ul li:hover a{
-    color: red;
-
+    color: black;
+    background: yellow;
+}
+.sci li a:hover{
+    transform: translateY(-10px);
 }
 footer li{
     list-style: none;
     display: inline-block;
-    padding: 50px;
-    padding-top: 30px;   
+    padding: 5px;
+    padding-top: 30px;
+    padding-right: 20px;
 }
 footer ul li a{
     text-decoration: none;
-   color: white;
-    border-style: solid;
-    padding: 5px;
-    border-radius: 20px;
+    color: white;
+    border-style: none;
+    padding: 30px;
+    border-radius: 0px;
+    font-family:serif;
+    font-weight: lighter;
+}
+footer ul li i{
+    color: royalblue;
+}
+.checkbtn{
+    font-size: 20px;
+    color: black;;
+    float: right;
+    line-height: 100px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  .phone{
+    display: none;
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    .dropdown ul{
+      position: absolute;
+      width: 100%;
+      height: 3000px;
+      background: #2c3e50;
+      top: 180px;
+      left: -100%;
+      text-align: center;
+    
+    }
+    nav ul li{
+      display: block;
+      margin: 30px 0;
+      top: -150px;
+        
+    }
+    nav ul li a{
+      font-size: 25px;
+        color: white;
+        position: relative;
+        top: 120px;
+          
+    }
+    
+    #check:checked ~ .dropdown ul{
+      left: 0;
+    }
+      .welc{
+          font-size: 10px;
+      }
+      p,ol,ul,ol li{
+          font-size: 13px;
+      }
+      .layout{
+          width: 550px;
+      }
+      footer ul li{
+          font-size: 20px;
+      }
+      h2{
+          font-size: 20px;
+      }
+      .consult{
+          width: 700px;
+          padding-bottom: 20px;
+          
+      }
+      .dropdown ul ul li{
+          font-size: 15px;
+          right: -460px;
+          display: none;
+          
+      }
+    section .contact{
+        margin-left: -160px;
+    } 
+    .phone{
+        display:inline;
+    } 
 }
 
 
