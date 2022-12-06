@@ -262,7 +262,7 @@ footer ul li i{
     display: none;
 }
 
-@media (max-width: 650px){
+@media (max-width: 750px){
     .checkbtn{
       display: block;
     }
