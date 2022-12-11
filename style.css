@@ -6,37 +6,33 @@ body {
     margin: 0;
     font-family: serif;
     font-size: 18px;
+    
 }
-nav{
-    height: 190px;
-    background-color: white;
-   /* position: fixed;*/
+body h2{
+    color: blue;
+    font-size: 40px;
+    padding-left: 30px;
+}
+header nav{
+    background: white;
     width: 100%;
+    font-weight:500px;
 }
-.dropdown{
-    margin: 0 auto;
+.ki img{
+    width: 200px;
+    height: 150px;
 }
-.logo{
-    float: left;
-    padding: 5px 0 0 0;
-    width: 150px;
-    height: auto;
+nav ul{
+    float: right;
+    margin-top: -80px;
 }
 
-nav ul{
-    padding: 0;
-    margin: 0;
-    float: right;
-    padding-top: 80px;
-}
 nav ul li{
     list-style: none;
     padding: 10px;
     font-size: 30px;
     position: relative;
-    display: inline-block;
-    top: -20px;
-    
+    display: inline-block;   
 }
 nav ul li a{
     text-decoration: none;
@@ -56,7 +52,8 @@ nav ul li a:hover{
 nav ul ul{
     display: none;
     position: absolute;
-     top: 0px;
+     top: 140px;
+     right: 0px;
     
 }
 nav ul li:hover > ul{
@@ -65,11 +62,10 @@ nav ul li:hover > ul{
 }
 nav ul ul li{
     width: 250px;
-    float: none;
-    background: lightblue;
+    background: transparent;
     display:block;
-    border-bottom-style: solid;
-    border-radius: 40px;
+    border-style: solid ;
+    border-radius: 20px;
     margin: 5px;
 }
 
@@ -82,33 +78,52 @@ nav ul ul ul li{
 nav .active{
     color: black;
 }
-.body {
-    margin: 0;
-    padding: 20px;
-    font-size: 16px;    
+.sec1, .sec2 {
+    margin-left: 30px;
+    padding-left: 10px;
+    font-size: 16px; 
+    border-left: solid red; 
+    border-left-width: 15px;
+         
 }
-.body ol li {
-    padding: 5px; 
-}
-.body ol li li{
-     list-style-type: square;
-}
-.body ul li {
-    padding: 5px; 
-}
-.stuff img{
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-}
-
-.consult img{
-    float: right;
-    height: 500px;
-    width: 700px;
-    padding-right: 60px; 
+.bak H1{
+    color: blue;
+    font-size: 55px;
+    margin-left: 30px;
+    display: inline-flex;
+    margin-bottom: -5px;
     
 }
+.sec3{
+    margin-left: 30px;
+    padding-left: 10px;
+    font-size: 16px; 
+    border-left: solid red; 
+    border-left-width: 15px;
+}
+.sec3 ol li {
+    padding: 0; 
+}
+.sec3 ol li li{
+     list-style-type: square;
+}
+.sec4{
+    margin-left: 30px;
+    padding-left: 10px;
+    font-size: 16px; 
+    border-left: solid red; 
+    border-left-width: 15px;
+}
+.sec4 ul li {
+    padding: 0; 
+}
+.stuff img{
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
 input[type=text], select, textarea{
     width: 100%;
     padding: 12px;
@@ -143,25 +158,21 @@ section{
     max-width: 700px;
     box-shadow: 0px 0px 20px #00000010;
     border-radius: 8px;
-    margin-bottom: 20px;
-    
-    
-    
+    margin-bottom: 20px; 
 }
 .co{
     background-color: lightcoral;
     padding: 20px;
     margin: 0;
-    text-align: center;
-        
+    text-align: center;     
 }
 .info{
     padding: 50px;
     text-align: center;
 }
 .med img{
-    padding: 0;
-    padding-right: 0;
+    padding-left: 40px;
+    padding-right: 40px;
     width: 100%;
     
 }
@@ -186,13 +197,17 @@ section{
     background-color: aqua;
     border-style: solid;
     border-color: brown;
-    padding: 10px;
+    padding-left: 10px;
     width: 700px;
     border-radius: 10px;
-    margin: 0px;
+    margin: 30px;
     animation-name: layout;
     animation-duration: 15s;
     animation-iteration-count: infinite;
+}
+.layout h2{
+    font-size: 25px;
+    color: #000;
 }
 
 .welc{
@@ -201,6 +216,7 @@ section{
     width: 45%;
     height: 80px;
     padding:10px;
+    margin-bottom: 20px;
     border-style: solid;
     transition: width 2s, height 4s, transform 2s;
 }
@@ -210,44 +226,168 @@ section{
     background-color: dodgerblue;
 }
 
-footer ul{
-    background-color: #2e354f;
+footer{
+    background:linear-gradient(to right, #00093C, #2d0b00);
     font-size: 30px;
-    height: 100px;
-    margin-bottom: 0;
-    padding: 0;
+    bottom: 0;
+    padding: 100px 0 30px;
     margin: 0;
-    width: 100%;
-   
+    max-width: 100%;
+    color: #fff;
+    font-size: 16px;
+    line-height: 20px;
 }
-footer ul li:hover a{
-    color: black;
-    background: yellow;
+.row{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
 }
-.sci li a:hover{
-    transform: translateY(-10px);
+.col{
+    flex-basis: 25%;
+    padding: 10px;
 }
-footer li{
+.col:nth-child(2), .col:nth-child(3){
+    flex-basis: 15%;
+}
+.loggo{
+    width: 80px;
+    margin-bottom: 30px;
+}
+.col h3{
+    width:fit-content;
+    color: yellow;
+    font-size: 30px;
+}
+.col ul li{
     list-style: none;
-    display: inline-block;
-    padding: 5px;
-    padding-top: 30px;
-    padding-right: 20px;
+    margin-bottom: 12px;
+    margin-left: -40px;
+
 }
-footer ul li a{
+.col ul li a{
     text-decoration: none;
-    color: white;
-    border-style: none;
-    padding: 30px;
-    border-radius: 0px;
-    font-family:serif;
-    font-weight: lighter;
+    color: #fff;
+    margin-left:  5px; ;
+    
 }
-footer ul li i{
-    color: royalblue;
+.col ul li:hover a{
+    color: rgb(70, 74, 136);
 }
-.checkbtn{
+.col ul li i{
+    color: yellow;
+    
+}
+
+footer form{
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
+}
+footer form .far{
+    font-size: 18px;
+    margin-right: 10px;
+}
+footer form input{
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+}
+footer form .far{
+    color: yellow;
+} 
+form button{
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: #ccc;
+    font-size: 25px;
+    color: yellow;
+}
+.social-icons .fab{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
     font-size: 20px;
+    color: #000;
+    background: yellow;
+    margin-right: 15px;
+    cursor: pointer;
+}
+hr{
+    width: 90%;
+    border: solid yellow 1px;
+    border-bottom: 1px yellow;
+}
+.copyright{
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+}
+.underline{
+    width: 100%;
+    height: 5px;
+    background: #767676;
+    border-radius: 3px;
+    position: relative;
+    top: 5px;
+    left: 0;
+    overflow: hidden;
+}
+.underline span{
+    width: 15px;
+    height: 100%;
+    background: #fff;
+    border-radius: 3px;
+    top: 0;
+    left: 10px;
+    animation: moving 2s linear infinite;
+    position: absolute;
+}
+@keyframes moving{
+    0%{
+        left: -20px;
+    }
+    100%{
+        left: 100%;
+    }
+}
+.g1{
+    color: red;
+}
+.g2{
+    color: green;
+}
+.g3{
+    color: yellow;
+}
+.g4{
+    color: red;
+}
+.g6{
+    color: rgb(71, 185, 71);
+}
+.tit h2{
+    background: yellow;
+    color: #000;
+    font-size: 45px;
+    margin-right: 80px;
+    border: #000 solid;
+    margin-left: 30px;
+
+}
+
+.checkbtn{
+    font-size: 40px;
     color: black;;
     float: right;
     line-height: 100px;
@@ -258,23 +398,24 @@ footer ul li i{
   #check{
     display: none;
   }
-  .phone{
-    display: none;
-}
-
-@media (max-width: 600px){
+  
+@media (max-width: 660px){
     .checkbtn{
       display: block;
     }
-    .dropdown ul{
-      position: absolute;
+    nav ul{
+      position: fixed;
       width: 100%;
-      height: 3000px;
-      background: #2c3e50;
-      top: 180px;
-      left: -100%;
+      height: 100vh;
+      background: linear-gradient(to right, #1231e2, #a19692);
+      top: 250px;
+      left: 100%;
       text-align: center;
+      
     
+    }
+    body img{
+        max-width: 90%;
     }
     nav ul li{
       display: block;
@@ -289,46 +430,41 @@ footer ul li i{
         top: 120px;
           
     }
+    nav ul li a:hover{
+        color: yellow;
+    }
+    nav .active{
+        color: yellow;
+    }
     
-    #check:checked ~ .dropdown ul{
+    #check:checked ~  ul{
       left: 0;
     }
       .welc{
           font-size: 10px;
       }
       p,ol,ul,ol li{
-          font-size: 13px;
+          font-size: 18px;
       }
       .layout{
           width: 550px;
       }
-      footer ul li{
-          font-size: 20px;
-      }
-      h2{
-          font-size: 20px;
-      }
-      .consult{
-          width: 700px;
-          padding-bottom: 20px;
-          display: none;
           
-      }
-      .dropdown ul ul li{
-          font-size: 15px;
-          right: -460px;
-          display: none;
-          
-      }
     section .contact{
         margin-left: -160px;
-    } 
-    .phone{
-        display:inline;
-    } 
-    .logo{
-        width: 9px;
-        height: 5px;
+    }  
+    .ki img{
+        width: 150px;
+        padding-left: 40px;
+    }
+    footer{
+        bottom: unset;
+    }
+    .col{
+        flex-basis: 100%;
+    }
+    .col:nth-child(2), .col:nth-child(3){
+        flex-basis: 100%;
     }
 }
 
