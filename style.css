@@ -6,6 +6,7 @@ body {
     margin: 0;
     font-family: serif;
     font-size: 18px;
+    overflow-x: hidden;
     
 }
 body h2{
@@ -13,9 +14,7 @@ body h2{
     font-size: 40px;
     padding-left: 30px;
 }
-h2,p,h1{
-    width: 100%;
-}
+
 header nav{
     background: white;
     width: 100%;
