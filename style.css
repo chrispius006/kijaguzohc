@@ -13,6 +13,9 @@ body h2{
     font-size: 40px;
     padding-left: 30px;
 }
+h2,p,h1{
+    width: 100%;
+}
 header nav{
     background: white;
     width: 100%;
@@ -198,7 +201,7 @@ section{
     border-style: solid;
     border-color: brown;
     padding-left: 10px;
-    width: 700px;
+    width: 50%;
     border-radius: 10px;
     margin: 30px;
     animation-name: layout;
@@ -447,7 +450,7 @@ hr{
           font-size: 18px;
       }
       .layout{
-          width: 550px;
+          width: 90%;
       }
           
     section .contact{
