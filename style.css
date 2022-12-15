@@ -56,7 +56,7 @@ nav ul li a:hover{
 
 nav ul ul{
     display: none;
-    position: absolute;
+    position: relative;
      top: 140px;
      right: 0px;
     
@@ -68,18 +68,12 @@ nav ul li:hover > ul{
 nav ul ul li{
     width: 250px;
     background: transparent;
-    display:block;
+    display:inline-flex;
     border-style: solid ;
     border-radius: 20px;
     margin: 5px;
 }
 
-nav ul ul ul li{
-    position: relative;
-    right: 330px;
-    top: -70px;
-    
-}
 nav .active{
     color: black;
 }
@@ -430,7 +424,7 @@ label #cancel{
         padding: 0;
     }
     nav ul li{
-      display: block;
+      display:block;
       margin: 25px 0;
       line-height: 30px;
     }
@@ -438,7 +432,7 @@ label #cancel{
       font-size: 35px;
         color: white;
         position: relative;
-        top: 60px;
+        top: 20px;
         font-family: 'Courier New', Courier, monospace;         
     }
     nav ul li a:hover{
@@ -449,30 +443,28 @@ label #cancel{
     } 
     nav ul ul{
         display: none;
-        position: absolute;
-         top: 140px;
-         right: 0px;
+        position: relative;
+         top: 150px;
+         left: 0px;
+         height: 100vh;
+         width: 105vw;
         
     }
     nav ul li:hover > ul{
         display:block;
        
     }
-    nav ul ul li{
-        width: 250px;
-        background: transparent;
-        display:block;
-        border-style: solid ;
-        border-radius: 20px;
-        margin: 5px;
-    }
-    
-    nav ul ul ul li{
-        position: relative;
-        right: 330px;
-        top: -70px;
+     nav ul ul li{
+        width: 50px;
+        background: transparent; 
+        display:inline-flex;
+        color: white;
+        font-size: 13px;
+        border: none;
+        padding: 0;
         
-    }   
+    }
+      
     #check:checked ~  ul{
       left: 0;
     }
