@@ -515,7 +515,7 @@ label #cancel{
     }
     section{
         padding-top: 50px;
-        padding-left: 180px; 
+        padding-left:165px; 
         align-content: center;
         max-width: 100%;
     }
@@ -531,6 +531,9 @@ label #cancel{
     }
     .info{
         font-size: 13px;
+    }
+    .med img, .stuff img{
+        padding-left: 15px;
     }
 }
 
