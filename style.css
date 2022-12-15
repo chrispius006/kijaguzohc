@@ -433,15 +433,12 @@ label #cancel{
       display: block;
       margin: 25px 0;
       line-height: 30px;
-      /* text-align: center; */
-        
     }
     nav ul li a{
       font-size: 35px;
         color: white;
         position: relative;
         top: 60px;
-        /* text-align: center; */
         font-family: 'Courier New', Courier, monospace;         
     }
     nav ul li a:hover{
@@ -449,7 +446,33 @@ label #cancel{
     }
     nav .active{
         color: yellow;
-    }    
+    } 
+    nav ul ul{
+        display: none;
+        position: absolute;
+         top: 140px;
+         right: 0px;
+        
+    }
+    nav ul li:hover > ul{
+        display:block;
+       
+    }
+    nav ul ul li{
+        width: 250px;
+        background: transparent;
+        display:block;
+        border-style: solid ;
+        border-radius: 20px;
+        margin: 5px;
+    }
+    
+    nav ul ul ul li{
+        position: relative;
+        right: 330px;
+        top: -70px;
+        
+    }   
     #check:checked ~  ul{
       left: 0;
     }
@@ -502,7 +525,7 @@ label #cancel{
       }
       
       .tit h2{
-        font-size: 23px;
+        font-size: 20px;
       }
           
     section .contact{
@@ -523,7 +546,7 @@ label #cancel{
         flex-basis: 100%;
     }
     .bak h1{
-        font-size: 30px;
+        font-size: 38px;
     }
     .copyright{
         font-size: 13px;
