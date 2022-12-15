@@ -216,14 +216,13 @@ section{
 
 .welc{
     border-radius: 20px;
-    background:linear-gradient(to right, #00093C, #2d0b00);
+    background-color: darksalmon;
     width: 45%;
     height: 80px;
     padding:10px;
     margin-bottom: 20px;
     margin-top: 20px;
-    color:white;
-    border-style:  yellow solid;
+    border-style: solid;
     transition: width 2s, height 4s, transform 2s;
 }
 .welc:hover {
@@ -388,9 +387,10 @@ hr{
     font-size: 45px;
     margin-right: 80px;
     border:yellow solid;
-    margin-left: 30px;
-    padding: 10px;
+    margin-left: 15px;
+    padding: 20px;
     border-radius: 10px;
+    width: 80%;
 
 }
 
@@ -460,8 +460,19 @@ label #cancel{
         display: block;
     }
     .welc{
-          font-size: 10px;
-      }
+        background:linear-gradient(to right, #00093C, #2d0b00);
+        width: 85%;
+        text-align: center;
+        color:white;
+        border: white 2px solid;
+     }
+    .welc h1{
+        font-size: 25px;
+    }
+    .welc:hover {
+        height: 100px;
+        width: 85%;
+    }
     p,ol,ul,ol li{
           font-size: 13px;
           line-height: 25px;
