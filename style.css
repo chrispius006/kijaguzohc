@@ -6,7 +6,8 @@ body {
     margin: 0;
     font-family: serif;
     font-size: 18px;
-    width: 95%;
+    width: 100%;
+    line-height: 25px;    
     
     
 }
@@ -18,9 +19,8 @@ body h2{
 
 header nav{
     background: white;
-    width: 105%;
+    width: 100%;
     font-weight:500px;
-    min-width: 100%;
    
 }
 .ki img{
@@ -89,7 +89,7 @@ nav .active{
     font-size: 16px; 
     border-left: solid red; 
     border-left-width: 15px;
-         
+    line-height: 25px;    
 }
 .bak H1{
     color: blue;
@@ -101,7 +101,7 @@ nav .active{
 }
 .sec3{
     margin-left: 30px;
-    padding-left: 10px;
+    padding-left: 0px;
     font-size: 16px; 
     border-left: solid red; 
     border-left-width: 15px;
@@ -114,7 +114,7 @@ nav .active{
 }
 .sec4{
     margin-left: 30px;
-    padding-left: 10px;
+    padding-left: 0px;
     font-size: 16px; 
     border-left: solid red; 
     border-left-width: 15px;
@@ -123,10 +123,8 @@ nav .active{
     padding: 0; 
 }
 .stuff img{
-    width: 70%;
-    padding-left: 40px;
-    padding-right: 40px;
-    
+    width: 97%;
+    padding-left: 30px;
 }
 
 input[type=text], select, textarea{
@@ -170,17 +168,18 @@ section{
     padding: 20px;
     margin: 0;
     text-align: center; 
-    width: 105%;    
+        
 }
 .info{
     padding: 50px;
     text-align: center;
 }
+.info h2{
+    color: black;
+}
 .med img{
-    padding-left: 40px;
-    padding-right: 40px;
-    width: 70%;
-    
+    padding-left: 30px;
+    width: 97%; 
 }
 .location{
     background-color: darkslategray;
@@ -239,7 +238,7 @@ footer{
     bottom: 0;
     padding: 100px 0 30px;
     margin: 0;
-    width: 105%;
+    width: 100%;
     color: #fff;
     font-size: 16px;
     line-height: 20px;
@@ -390,6 +389,7 @@ hr{
     margin-right: 80px;
     border: #000 solid;
     margin-left: 30px;
+    padding: 10px;
 
 }
 
@@ -399,7 +399,8 @@ label #cancel{
     color: black;;
     float: right;
     line-height: 100px;
-    margin-right: 40px;
+    margin-right: 20px;
+    margin-top: 0;
     cursor: pointer;
     display: none;
   }
@@ -410,12 +411,13 @@ label #cancel{
 @media (max-width: 660px){
     label #btn{
       display: block;
+      
     }
     nav ul{
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: linear-gradient(to right, #1231e2, #a19692);
+      background: linear-gradient(to right, #5f6aaa, #684727);
       top: 180px;
       left: 100%;
       transition: all .8s;
@@ -430,7 +432,7 @@ label #cancel{
       display: block;
       margin: 25px 0;
       line-height: 30px;
-      text-align: center;
+      /* text-align: center; */
         
     }
     nav ul li a{
@@ -438,7 +440,7 @@ label #cancel{
         color: white;
         position: relative;
         top: 60px;
-        text-align: center;
+        /* text-align: center; */
         font-family: 'Courier New', Courier, monospace;         
     }
     nav ul li a:hover{
@@ -456,14 +458,37 @@ label #cancel{
     #check:checked ~ label #cancel{
         display: block;
     }
-      .welc{
+    .welc{
           font-size: 10px;
       }
-      p,ol,ul,ol li{
-          font-size: 18px;
+    p,ol,ul,ol li{
+          font-size: 13px;
+          line-height: 25px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+      }
+    .sec1, .sec2, .sec3, .sec4{
+        margin-left: 15px;
+    
+      }
+    .sec3 ol li{
+        padding-left: 0px;
+      }
+      .sec4 ul li{
+        padding-left: 0;
+        margin-top: 0;
+      }
+      .sec0 h2{
+        padding-top: -20px;
+        line-height: 50px;
       }
       .layout{
          width: 90%;
+         margin-left: 15px;
+      }
+      
+      .tit h2{
+        font-size: 25px;
       }
           
     section .contact{
@@ -485,6 +510,12 @@ label #cancel{
     }
     .bak h1{
         font-size: 30px;
+    }
+    .copyright{
+        font-size: 13px;
+    }
+    .contact{
+        width: 90%;
     }
 }
 
