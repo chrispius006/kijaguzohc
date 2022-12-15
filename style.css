@@ -386,7 +386,7 @@ hr{
     color:white;
     font-size: 45px;
     margin-right: 80px;
-    border:yellow solid;
+    border:red solid;
     margin-left: 15px;
     padding: 20px;
     border-radius: 10px;
@@ -464,7 +464,7 @@ label #cancel{
         width: 85%;
         text-align: center;
         color:white;
-        border: white 2px solid;
+        border:red 2px solid;
      }
     .welc h1{
         font-size: 25px;
@@ -502,7 +502,7 @@ label #cancel{
       }
       
       .tit h2{
-        font-size: 25px;
+        font-size: 23px;
       }
           
     section .contact{
