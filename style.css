@@ -216,13 +216,14 @@ section{
 
 .welc{
     border-radius: 20px;
-    background-color: darksalmon;
+    background:linear-gradient(to right, #00093C, #2d0b00);
     width: 45%;
     height: 80px;
     padding:10px;
     margin-bottom: 20px;
     margin-top: 20px;
-    border-style: solid;
+    color:white;
+    border-style:  yellow solid;
     transition: width 2s, height 4s, transform 2s;
 }
 .welc:hover {
@@ -382,13 +383,14 @@ hr{
     color: rgb(71, 185, 71);
 }
 .tit h2{
-    background: yellow;
-    color: #000;
+    background:linear-gradient(to right, #00093C, #2d0b00);
+    color:white;
     font-size: 45px;
     margin-right: 80px;
-    border: #000 solid;
+    border:yellow solid;
     margin-left: 30px;
     padding: 10px;
+    border-radius: 10px;
 
 }
 
@@ -416,7 +418,7 @@ label #cancel{
       position: fixed;
       width: 100%;
       height: 100vh;
-      background: linear-gradient(to right, #5f6aaa, #684727);
+      background:linear-gradient(to right, #00093C, #2d0b00);
       top: 180px;
       left: 100%;
       transition: all .8s;
@@ -478,12 +480,14 @@ label #cancel{
         margin-top: 0;
       }
       .sec0 h2{
-        padding-top: -20px;
         line-height: 50px;
       }
       .layout{
          width: 90%;
-         margin-left: 15px;
+         margin-left: 10px;
+      }
+      .layout p{
+        padding: 0;
       }
       
       .tit h2{
