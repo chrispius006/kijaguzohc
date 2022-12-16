@@ -543,7 +543,8 @@ label #cancel{
         width: 180%;
         box-shadow: 0px 0px 20px #00000010;
         border-radius: 8px;
-        margin-bottom: 20px; 
+        margin-bottom: 20px;
+        font-size: 13px; 
     }
     .info h2{
         font-size: 25px;
