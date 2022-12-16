@@ -432,8 +432,8 @@ label #cancel{
          top: 100px;
          left: 0px;
          height: 100vh;
-         width: 110vw;
-         padding-left: 3px;
+         width: 109vw;
+         margin-left: 3px;
                  
     }
     nav ul li:hover > ul{
@@ -547,7 +547,7 @@ label #cancel{
         font-size: 13px; 
     }
     .info h2{
-        font-size: 25px;
+        font-size: 20px;
     }
     .info{
         font-size: 13px;
