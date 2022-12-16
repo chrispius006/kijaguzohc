@@ -443,7 +443,7 @@ label #cancel{
      nav ul ul li{
         width: auto;
         background:white; 
-        display:inline-flex;
+        display:inline-flexbox;
         color: black;
         font-size: 13px;
         border: none;
