@@ -403,6 +403,7 @@ label #cancel{
       transition: all .8s;
       text-align: centre;
       min-width: 310px;
+      overflow-y: scroll;
     }
     body img{
         max-width: 90%;
@@ -537,8 +538,7 @@ label #cancel{
         flex-basis: 100%;
     }
     .bak h1{
-        font-size: 12px;
-        width: 13px;
+        font-size: 35px;
     }
     .copyright{
         font-size: 13px;
