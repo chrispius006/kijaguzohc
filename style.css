@@ -181,10 +181,11 @@ section{
 .location{
     background-color: darkslategray;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     height: 200px;
     color: white;
-    padding-top: 80px;
+    padding-top: 40px;
+    line-height: 40px;
 }
 
 @keyframes layout{
@@ -570,6 +571,12 @@ label #cancel{
     }
     .med img, .stuff img{
         padding-left: 15px;
+    }
+    .location{
+        font-size: 20px;
+        line-height: 35px;
+        padding-top: 60px;
+        padding-bottom: -10px;
     }
 }
 
