@@ -402,6 +402,7 @@ label #cancel{
       left: 100%;
       transition: all .8s;
       text-align: centre;
+      min-width: 310px;
     }
     body img{
         max-width: 90%;
@@ -432,13 +433,13 @@ label #cancel{
          top: 100px;
          left: 0px;
          height: 100vh;
-         width: 109vw;
-         margin-left: 3px;
-                 
+         width: 90%;
+         background: none;
+         left: -40px;        
     }
     nav ul li:hover > ul{
         display:block;
-       
+        margin-left: -60px;
     }
      nav ul ul li{
         width: auto;
@@ -449,7 +450,7 @@ label #cancel{
         border: none;
         border-radius: 10px;
         padding: 2px;
-
+    
     }
       
     #check:checked ~  ul{
@@ -527,6 +528,7 @@ label #cancel{
     .col h3{
         margin-top: 0;
     }
+
     .col p{
         padding-top:0;
         padding-bottom: 0;
@@ -535,7 +537,8 @@ label #cancel{
         flex-basis: 100%;
     }
     .bak h1{
-        font-size: 38px;
+        font-size: 12px;
+        width: 13px;
     }
     .copyright{
         font-size: 13px;
