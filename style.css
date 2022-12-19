@@ -59,6 +59,7 @@ nav ul ul{
     position: absolute;
      top: 140px;
      right: 0px;
+     padding: 0;
     
 }
 nav ul li:hover > ul{
@@ -66,12 +67,15 @@ nav ul li:hover > ul{
    
 }
 nav ul ul li{
-    width: 250px;
-    background: transparent;
+    width: auto;
+    background: gray;
     display:inline-block;
-    border-style: solid ;
-    border-radius: 20px;
-    margin: 5px;
+    border-style: none ;
+    border-radius: 10px;
+    margin: 2px;
+    font-size: 15px;
+    padding: 3px;
+    color: white;
 }
 
 nav .active{
