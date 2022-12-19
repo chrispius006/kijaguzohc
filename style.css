@@ -388,7 +388,7 @@ label #cancel{
     display: none;
   }
   
-@media (max-width: 750px){
+@media (max-width: 800px){
     label #btn{
       display: block;
       
