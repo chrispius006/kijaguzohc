@@ -456,7 +456,8 @@ label #cancel{
          height: 100vh;
          width: 90%;
          background: none;
-         left: -40px;       
+         left: -40px;
+               
     }
     nav ul li:hover > ul{
         display:block;
@@ -475,11 +476,11 @@ label #cancel{
     }
     #but{
         font-size: 35px;
-        padding-left: 0;
+        margin-left: -6px;
         color: white;
         font-family:'Courier New', Courier, monospace; ;
     }
-    #but:hover{
+    #but:hover, #but:focus{
         color: yellow;
     }
     
