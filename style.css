@@ -471,12 +471,14 @@ label #cancel{
         font-size: 13px;
         border: none;
         border-radius: 10px;
-        padding: 2px;
-    
+        padding: 1px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-top: 8px;
     }
     #but{
         font-size: 35px;
-        margin-left: -6px;
+        margin-left: -8px;
         color: white;
         font-family:'Courier New', Courier, monospace; ;
     }
